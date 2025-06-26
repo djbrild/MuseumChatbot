@@ -1,4 +1,4 @@
-const ollamaUrl = "https://corsproxy.io/?url=https://85be-105-156-68-164.ngrok-free.app/api/generate";
+const ollamaUrl = "https://40b5-105-156-68-164.ngrok-free.app/api/generate";
 const GOOGLE_API_KEY = 'AIzaSyABr6s-yCq6Af7cF-442FHO3gqqKIsDuIQ';
 const GOOGLE_CX = 'c4cf031d6212d4c40';
 
