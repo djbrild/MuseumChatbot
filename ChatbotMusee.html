@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatbotMusee - Découvrez les Musées</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="ChatbotMusee.css">
+    <link rel="stylesheet" href="button-chatbot-style.css">
+
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="supabaseConfig.js"></script>
+    <script src="necessaire.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Musées & Chatbot</h1>
+        <div class="header-actions">
+            <button class="role-btn admin" onclick="window.location.href='admin2.html'">👤<br>Administrateur</button>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="museum-container">
+            <article class="museum-card">
+                <img src="musees/berbere.jpg" 
+                     alt="Musée Berbère - Marrakech" 
+                     loading="lazy">
+                <div class="museum-info">
+                    <h2>Musée Berbère - Marrakech</h2>
+                    <p>Un musée dédié à la culture berbère, présentant des objets traditionnels et des expositions sur l'histoire et l'art berbères.</p>
+                    <a href="https://www.jardinmajorelle.com/musee-pierre-berge-des-arts-berberes/" class="btn" target="_blank" rel="noopener noreferrer">Visitez le site</a>
+                </div>
+            </article>
+
+            <article class="museum-card">
+                <img src="musees/yves.webp" 
+                     alt="Musée Yves Saint Laurent - Marrakech" 
+                     loading="lazy">
+                <div class="museum-info">
+                    <h2>Musée Yves Saint Laurent - Marrakech</h2>
+                    <p>Un musée consacré au célèbre couturier Yves Saint Laurent, présentant ses créations et son influence dans la mode.</p>
+                    <a href="https://www.museeyslmarrakech.com/" class="btn" target="_blank" rel="noopener noreferrer">Visitez le site</a>
+                </div>
+            </article>
+
+            <article class="museum-card">
+                <img src="musees/Batha.jpg" 
+                     alt="Musée Du Batha - Fès" 
+                     loading="lazy">
+                <div class="museum-info">
+                    <h2>Musée Du Batha - Fès</h2>
+                    <p>Un musée d'art et d'histoire situé dans un ancien palais, présentant des collections d'art marocain traditionnel.</p>
+                    <a href="https://fnm.ma/musees-en-cours-de-restauration/musee-al-batha-de-fes/" class="btn" target="_blank" rel="noopener noreferrer">Visitez le site</a>
+                </div>
+            </article>
+
+            <article class="museum-card">
+                <img src="musees/kasbah2.jpg" 
+                     alt="Musée de la Kasbah (Musée des Cultures Méditerranéennes) - Tanger" 
+                     loading="lazy">
+                <div class="museum-info">
+                    <h2>Musée de la Kasbah (Musée des Cultures Méditerranéennes) - Tanger</h2>
+                    <p>Un musée présentant les cultures méditerranéennes avec une collection d'objets historiques et artistiques.</p>
+                    <a href="https://www.visittanger.com/en/visite-guidee/kasbah-museum-of-mediterranean-cultures/5e1e897dc052b1f24c068c4f" class="btn" target="_blank" rel="noopener noreferrer">Visitez le site</a>
+                </div>
+            </article>
+
+            <article class="museum-card">
+                <img src="musees/Dar_Si_Said.jpg" 
+                     alt="Musée Dar Si Said (Musée des Arts Marocains) - Marrakech" 
+                     loading="lazy">
+                <div class="museum-info">
+                    <h2>Musée Dar Si Said (Musée des Arts Marocains) - Marrakech</h2>
+                    <p>Un musée d'art marocain traditionnel avec des collections d'artisanat, de bijoux et de textiles.</p>
+                    <a href="https://darsisaid.com/fr/" class="btn" target="_blank" rel="noopener noreferrer">Visitez le site</a>
+                </div>
+            </article>
+
+            <article class="museum-card">
+                <img src="musees/Dar_jamai1.jpg" 
+                     alt="Musée Dar Jamaï - Meknès" 
+                     loading="lazy">
+                <div class="museum-info">
+                    <h2>Musée Dar Jamaï - Meknès</h2>
+                    <p>Ancien palais du XIXe siècle présentant l'artisanat marocain traditionnel, des costumes, des bijoux et des tapis.</p>
+                    <a href="https://fnm.ma/musees-ouverts/musee-national-delamusique/" class="btn" target="_blank" rel="noopener noreferrer">Visitez le site</a>
+                </div>
+            </article>
+
+            <article class="museum-card">
+                <img src="musees/mohammed6.jpg" 
+                     alt="Musée Mohammed VI d'art moderne et contemporain - Rabat" 
+                     loading="lazy">
+                <div class="museum-info">
+                    <h2>Musée Mohammed VI d'art moderne et contemporain - Rabat</h2>
+                    <p>Un musée d'art moderne et contemporain présentant des œuvres marocaines et internationales.</p>
+                    <a href="https://fnm.ma/musees-ouverts/musee-mohammed-vi-dart-moderne-et-contemporain/" class="btn" target="_blank" rel="noopener noreferrer">Visitez le site</a>
+                </div>
+            </article>
+
+            <article class="museum-card">
+                <img src="musees/Nejjarine.jpg" 
+                     alt="Musée Nejjarine des Arts et Métiers du Bois - Fès" 
+                     loading="lazy">
+                <div class="museum-info">
+                    <h2>Musée Nejjarine des Arts et Métiers du Bois - Fès</h2>
+                    <p>Un musée dédié aux arts et métiers du bois, présentant des objets artisanaux et des expositions sur la menuiserie traditionnelle.</p>
+                    <a href="http://www.nejjarine.co.ma" class="btn" target="_blank" rel="noopener noreferrer">Visitez le site</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ChatbotMusee. Tous droits réservés.</p>
+    </footer>
+
+
+    <!-- ceci est a enlever car plus besoin 
+        <script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
+        <script src="https://files.bpcontent.cloud/2025/04/04/00/20250404005455-HLBAR9AG.js"></script> 
+    -->
+        
+   
+
+        <!-- Icône pour ouvrir le chatbot -->
+    <div id="chatbot-icon">💬</div>
+
+        <!-- Conteneur du chatbot -->
+    <iframe id="chatbot-frame" src="home2.html"></iframe>
+
+        <!-- Bouton plein écran -->
+    <button id="toggle-fullscreen">Plein écran</button>
+
+
+        <!-- JS pour gérer l'affichage -->
+    <script>
+        const chatbotFrame = document.getElementById('chatbot-frame');
+        const toggleButton = document.getElementById('toggle-fullscreen');
+        let isFullscreen = false;
+
+        function toggleChatbot() {
+            if (chatbotFrame.style.display === 'none' || chatbotFrame.style.display === '') {
+                chatbotFrame.style.display = 'block';
+                toggleButton.style.display = 'block';
+            } else {
+                chatbotFrame.style.display = 'none';
+                toggleButton.style.display = 'none';
+            }
+        }
+
+        toggleButton.addEventListener('click', () => {
+            if (!isFullscreen) {
+                chatbotFrame.classList.add('fullscreen');
+                toggleButton.textContent = 'Réduire';
+            } else {
+                chatbotFrame.classList.remove('fullscreen');
+                toggleButton.textContent = 'Plein écran';
+            }
+            isFullscreen = !isFullscreen;
+        });
+
+        document.getElementById('chatbot-icon').addEventListener('click', toggleChatbot);
+    </script>
+
+</body>
+</html>
