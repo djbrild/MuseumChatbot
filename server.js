@@ -23,5 +23,5 @@ app.post('/api/generate', async (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('Middleware en écoute sur http://localhost:3000');
+  console.log('Middleware en écoute sur http://localhost:8000');
 });
