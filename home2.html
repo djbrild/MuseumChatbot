@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuseumRobot - Assistant Virtuel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Assistant Virtuel des Musées</h1>
+            <!--<p id="welcome-message"></p> -->
+        </div>
+        <div id="welcome-message"></div>
+        <div class="messages-container" id="messagesContainer">
+            <!-- Les messages vont apparaître ici -->
+        </div>
+
+        <div class="quick-replies" id="quickReplies">
+            <button class="quick-reply-btn" data-query="Expositions">Musée Disponible</button>
+            <button class="quick-reply-btn" data-query="Horaires">Horaires</button>
+            <button class="quick-reply-btn" data-query="Billetterie">Billetterie</button>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="Posez votre question...">
+            <button id="sendButton">Envoyer</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="supabaseConfig.js"></script>
+    <script src="app1.js"></script>
+</body>
+</html>

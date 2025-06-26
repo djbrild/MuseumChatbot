@@ -1,0 +1,231 @@
+/* Global Styles and Variables */
+:root {
+    --primary-color: #1a1a1a;
+    --secondary-color: #333333;
+    --accent-color: #ffffff;
+    --bg-color: #f5f5f5;
+    --font-family: 'Roboto', sans-serif;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    color: var(--primary-color);
+}
+
+/* Header & Navigation */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #1a1a1a;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*.header-actions {
+    /* conteneur du bouton, aligné à droite automatiquement */
+
+
+.role-btn.admin {
+    background-color: #fcfcfc;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.role-btn.admin:hover {
+    background-color: #cf711c;
+}
+
+
+.chatbot-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.chatbot-link:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+/* Museum Cards Layout */
+.museum-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.museum-card {
+    background: var(--accent-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.museum-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.museum-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.museum-card:hover img {
+    transform: scale(1.05);
+}
+
+.museum-info {
+    padding: 1.5rem;
+}
+
+.museum-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.museum-info p {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--primary-color);
+    color: var(--accent-color);
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .museum-container {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .museum-card {
+        border-radius: 8px;
+    }
+
+    .museum-info {
+        padding: 1rem;
+    }
+
+    .museum-info h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Loading and Error States */
+img[loading] {
+    background-color: #f0f0f0;
+    min-height: 200px;
+}
+
+img:not([src]), img[src=""] {
+    display: none;
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #000000;
+        --secondary-color: #000000;
+        --accent-color: #ffffff;
+        --bg-color: #ffffff;
+    }
+}
+
+
+
+/*
+#admin-login-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    background-color: #ffffffcc;
+    border-radius: 50%;
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    text-align: center;
+}
+
+#admin-login-btn:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+*/
+

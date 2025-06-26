@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenue - Chatbot Musée</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    img.logo {
+        width: 200px;
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto 20px;
+        opacity: 0;
+        transform: translateY(-20px);
+        animation: fadeInUp 1s ease forwards;
+    }
+
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 28px;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.4s;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.8s;
+    }
+
+    .role-btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .visitor {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    .visitor:hover {
+      background-color: #0056b3;
+    }
+
+    .admin {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .admin:hover {
+      background-color: #1e7e34;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>   
+</head>
+<body>
+
+  <!-- Logo -->
+  <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXJSS3QVUvQ8mdXCoDuUI3oqswe4_e8VQOJekmsuc64bVMG26o" alt="Logo musée" class="logo">
+
+  <h1>Bienvenue sur le Chatbot des Musées</h1>
+  <div class="button-container">
+    <button class="role-btn visitor" onclick="window.location.href='ChatbotMusee.html'">Je suis Visiteur</button>
+    <button class="role-btn admin" onclick="window.location.href='admin2.html'">Je suis Administrateur</button>
+  </div>
+
+</body>
+</html>

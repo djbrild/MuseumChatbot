@@ -1,0 +1,63 @@
+/* Icône pour ouvrir le chatbot */
+#chatbot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 999;
+  user-select: none;
+}
+
+/* Conteneur du chatbot */
+#chatbot-frame {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 500px;
+  height: 600px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* Bouton plein écran */
+#toggle-fullscreen {
+  position: fixed;
+  bottom: 90px;
+  right: 440px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+#toggle-fullscreen:hover {
+  background-color: #0056b3;
+}
+
+/* Style pour le mode plein écran */
+#chatbot-frame.fullscreen {
+  width: 100vw !important;
+  height: 100vh !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  border-radius: 0 !important;
+}
